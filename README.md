@@ -42,26 +42,6 @@ To contribute with Phecto, follow this:
 
 As alternative, go to Github documentation in [how to create a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
-## 🤝 Collaborators
-
-<table>
-  <tr>
-    <td align="center">
-      <a href="#">
-        <img src="https://avatars3.githubusercontent.com/roqueando" width="100px;" alt="Roqueando's Photo on Github"/><br>
-        <sub>
-          <b>Roqueando</b>
-        </sub>
-      </a>
-    </td>
-  </tr>
-</table>
-
-
-## 😄 Be a collab!<br>
-
-Quer fazer parte desse projeto? Read above how to contribute
-
 ## 📝 License
 
 That project is under license. Read the file [LICENSE](LICENSE.md) for more details
