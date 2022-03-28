@@ -33,7 +33,7 @@ composer require phecto/phecto
 ```
 
 
-## 📫 Contribuindo
+## 📫 Contribute
 To contribute with Phecto, follow this:
 
 1. Fork that repository.
