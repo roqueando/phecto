@@ -9,7 +9,7 @@ final class Changeset
     const DELETE = 'delete';
 
     public bool $isValid;
-    public ?object $data;
+    protected ?object $data;
     public array $changes;
     public array $errors;
     public array $required;
@@ -25,6 +25,11 @@ final class Changeset
         $this->action = $action;
     }
 
+    /**
+     * Set all required keys
+     * @param array $required
+     * @return Changeset
+     */
     public function setRequired(array $required): self
     {
         $this->required = $required;

@@ -11,13 +11,12 @@ final class ChangesetTest extends TestCase
     /** @test **/
     public function should_create_a_changeset()
     {
-        $customer = new Customer(name: "", email: "");
         $changes = [
             'name' => "Test Customer",
             'email' => "test@gmail.com"
         ];
 
-        $changeset = new Changeset($customer, $changes, Changeset::INSERT);
+        $changeset = new Changeset((object) [], $changes, Changeset::INSERT);
         $this->assertEquals($changeset->changes, $changes);
     }
 
@@ -33,5 +32,23 @@ final class ChangesetTest extends TestCase
 
         $this->assertFalse($changeset->isValid);
         $this->assertNotEmpty($changeset->errors);
+    }
+
+    /** @test **/
+    public function should_create_validations_for_class()
+    {
+
+        $customer = new Customer();
+        $changeset = $customer->changeset([
+            'name' => "Test Customer",
+            'email' => 'wrondemail',
+            'document' => 'invalid_document'
+        ], Changeset::INSERT);
+
+        $customerChangeset = $customer->validate($changeset);
+
+        var_dump($customerChangeset);
+        $this->assertFalse($customerChangeset->isValid);
+        $this->assertNotEmpty($customerChangeset->errors);
     }
 }
