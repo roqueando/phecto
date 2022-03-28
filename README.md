@@ -33,12 +33,12 @@ composer require phecto/phecto
 ```
 
 
-## 📫 Contribuindo para <nome_do_projeto>
+## 📫 Contribuindo
 To contribute with Phecto, follow this:
 
 1. Fork that repository.
 2. Create a branch: `git checkout -b <branch-name>`.
-3. Do your changes and commit them: `git commit -m '<mensagem_commit>'`
+3. Do your changes and commit them: `git commit -m '<message>'`
 4. Send to original branch: `git push origin phecto / <local>`
 5. Create a pull request.
 
