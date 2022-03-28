@@ -15,6 +15,9 @@
             "email": "vitor.roquep@gmail.com"
         }
     ],
+    "require": {
+        "php": ">= 8.1"
+    },
     "require-dev": {
         "pestphp/pest": "^1.21",
         "phpunit/phpunit": "^9"
