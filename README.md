@@ -1,5 +1,7 @@
 # Phecto
 
+<img src="logo.png" alt="Logo">
+
 > That project consists in create a Changeset before all risky operations in database like: insert, update or delete.
 
 ### Improvements
@@ -7,8 +9,8 @@
 The project is in development and the next updates will be these tasks:
 
 - [ ] Create the Changeset Core Class
-- [ ] Core PDO Class as Repo
-- [ ] Apply that in some architectures like: Models (like Eloquent), Pure Classes and others
+- [ ] Core PDO Class as Repository
+- [ ] Create a Structure class to serve as Model
 
 ## 💻 Requirements
 
@@ -19,7 +21,7 @@ The project is in development and the next updates will be these tasks:
 ## 🚀 Installing Phecto
 
 ```
-composer require phecto
+composer require phecto/phecto
 ```
 
 ## ☕ Usage

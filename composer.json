@@ -1,11 +1,12 @@
 {
-    "name": "phecto",
+    "name": "phecto/phecto",
     "description": "A PHP reply to Elixir's Ecto",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Phecto\\": "src/"
+            "Phecto\\": "src/",
+            "Tests\\": "tests/"
         }
     },
     "authors": [
@@ -14,5 +15,13 @@
             "email": "vitor.roquep@gmail.com"
         }
     ],
-    "require": {}
+    "require-dev": {
+        "pestphp/pest": "^1.21",
+        "phpunit/phpunit": "^9"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
 }
